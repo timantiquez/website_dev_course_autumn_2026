@@ -7,7 +7,7 @@
       }
       
       .transition-button:hover {
-        background-color: lightcoral;
+        background-color: rgb(158, 126, 126);
       }
       .animation-box {
         width: 50px;
