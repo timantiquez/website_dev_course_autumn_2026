@@ -1,0 +1,102 @@
+.transition-button {
+        background-color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: lightcoral;
+      }
+      .animation-box {
+        width: 50px;
+        height: 50px;
+        background-color: lightgreen;
+        position: relative;
+        animation: move 2s infinite alternate;
+      }
+
+      .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+      
+      @keyframes move {
+        from {
+          left: 0;
+        }
+        to {
+          left: 100px;
+        }
+      }
+
+      .pseudo-list li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+      }
+
+      .filter-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+
+      .quote {
+        position: relative;
+        padding-left: 20px;
+        font-style: italic;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: lightgray;
+      }
+
+      .flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.responsive-box {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) {
+  .responsive-box {
+    background-color: lightseagreen;
+  }
+}
